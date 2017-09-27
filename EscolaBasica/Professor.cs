@@ -13,16 +13,21 @@ namespace EscolaBasica
         private int id;
         private string turma;
         private int vagaDoCarro;
-        private Disciplina diciplica;
+        private string diciplica; //seria da classe diciplica, mas não deu para desenvolver trabalhei pouco nesse trabalho
 
+        public double Salario { get => salario; set => salario = value; }
+        public int Id { get => id; set => id = value; }
+        public string Turma { get => turma; set => turma = value; }
+        public int VagaDoCarro { get => vagaDoCarro; set => vagaDoCarro = value; }
+        public string Diciplica { get => diciplica; set => diciplica = value; }
 
         public Professor() { }
         public Professor(string nome, int idade, int cpf, string sexo,int id,string turma,double salario)
         {
             
-            this.id = id;
-            this.turma = turma;
-            this.salario = salario;
+            this.Id = id;
+            this.Turma = turma;
+            this.Salario = salario;
             this.Nome = nome;
             this.Idade = idade;
             this.Cpf = cpf;

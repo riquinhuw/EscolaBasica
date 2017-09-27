@@ -14,5 +14,20 @@ namespace EscolaBasica
         private string classe;
         private bool bolsista;
 
+        public int CarteiraDeEstudante { get => carteiraDeEstudante; set => carteiraDeEstudante = value; }
+        public int Matricula { get => matricula; set => matricula = value; }
+        public string Classe { get => classe; set => classe = value; }
+        public bool Bolsista { get => bolsista; set => bolsista = value; }
+
+        public Aluno(string nome)
+        {
+            this.Nome = nome;
+        }
+        public Aluno() { }
+
+        
+        
+        
+
     }
 }

@@ -35,7 +35,7 @@ namespace EscolaBasica
         public string Complemento { get => complemento; set => complemento = value; }
         public bool MenorDeIdade { get => menorDeIdade; set => menorDeIdade = value; }
         public string Responsavel { get => responsavel; set => responsavel = value; }
-        public int Idade { get => idade; set => idade = value; }
+        public int Idade { get => idade ; set => idade = value; }
         #endregion
 
         #region Metodos
@@ -47,7 +47,7 @@ namespace EscolaBasica
             this.cpf = cpf;
             this.sexo = sexo;
             this.idade = idade;
-            if (idade < 18) { this.menorDeIdade = true; } else{ this.menorDeIdade = false; }
+            //if (idade < 18) { this.menorDeIdade = true; } else{ this.menorDeIdade = false; }
             
         }
 
