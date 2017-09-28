@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace EscolaBasica
 {
-    public class @string
+    public class Diciplina
     {
-        private Aluno aluno = new Aluno();
-        private Professor professor = new Professor();
-        private string nome;
-        private string descricao;
+        public Aluno aluno = new Aluno();
+        public Professor professor = new Professor();
+        public string nome;
+        public string descricao;
+        public string conceito;
 
         public Aluno Aluno { get => aluno; set => aluno = value; }
         public Professor Professor { get => professor; set => professor = value; }
         public string Nome { get => nome; set => nome = value; }
         public string Descricao { get => descricao; set => descricao = value; }
 
-        @string() { }
+        public Diciplina() { }
         
 
     }
