@@ -8,10 +8,10 @@ namespace EscolaBasica
 {
     public class Curso
     {
-        private string nome;
+        public string nome;
 
-        Curso() { }
-        Curso(string nome) { this.Nome = nome; }
+        public Curso() { }
+        public Curso(string nome) { this.Nome = nome; }
 
         public string Nome { get => nome; set => nome = value; }
     }

@@ -26,10 +26,11 @@ namespace EscolaBasica
             c1.Salario = 10001;
             c1.Telefone = 9123123;
             Diciplina d1 = new Diciplina();
-            d1.nome = "Ciencia da Computacao";
+            d1.nome = "Programacao";
             d1.Descricao = "TU VAI PASSARA VIDA TODA DIIGITANDO NA FRENTE DO PC E FICANDO GORDO, SEU DEPENDENTE DE CAFE!!!";
-            d1.conceito = "Formar dependentes de cafeína compentes no seu trabalho escravo para multi nacionais";
+            d1.conceito = "Formar dependentes de cafeína compentes no seu trabalho escravo de multi nacionais";
             Aluno a2 = new Aluno();
+
 
             Console.WriteLine("Faculdade Dos Geras - Programa simplificado\n");
             Console.Write("Digite o nome do aluno:");
@@ -63,7 +64,26 @@ namespace EscolaBasica
             Console.Clear();
             Coordenador c2 = new Coordenador();
             Console.Write("Digite o nome do coordenador:");
+            c2.Nome = Console.ReadLine();
+            Console.Write("Digite do RG do coordenador:");
+            c2.Rg = int.Parse(Console.ReadLine());
+            Console.Write("Digite o Salario do coordenador:");
+            c2.Salario = int.Parse(Console.ReadLine());
 
+            Curso curso1 = new Curso("Ciencia da computacao");
+            
+
+            Console.Clear();
+
+            Console.WriteLine("O aluno que foi criado foi:");
+            Console.WriteLine("Seu nome e:{0}\nSua idade e:{1}\nEle e' menor de idade:{2}\nSua matricula e:{3}\nPertence a sala:{4}", a2.Nome, a2.Idade, a2.MenorDeIdade, a2.Matricula, a2.Classe);
+            Console.WriteLine("O professor criado foi:");
+            Console.WriteLine("Nome:{0}\nRG:{1}\nSalario:{2}", p2.Nome, p2.Rg, p2.Salario);
+            Console.WriteLine("O Coordenador criado foi:");
+            Console.WriteLine("Nome:{0}\nRG:{1}\nSalario:{2}", c2.Nome, c2.Rg, c2.Salario);
+            Console.WriteLine("\nO curso escolhido foi {0}:",curso1.nome);
+            Console.WriteLine("Cuja a descricao e:{0}\nO conceito e:{1}",d1.descricao,d1.conceito);
+            Console.WriteLine("E a cadeira padrao e:{0}", d1.nome);
 
         }
     }
