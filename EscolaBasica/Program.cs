@@ -27,7 +27,7 @@ namespace EscolaBasica
             c1.Telefone = 9123123;
             Diciplina d1 = new Diciplina();
             d1.nome = "Programacao";
-            d1.Descricao = "TU VAI PASSARA VIDA TODA DIIGITANDO NA FRENTE DO PC E FICANDO GORDO, SEU DEPENDENTE DE CAFE!!!";
+            d1.Descricao = "TU VAI PASSARA VIDA TODA DIIGITANDO NA FRENTE DO PC, SEU DEPENDENTE DE CAFE!!!";
             d1.conceito = "Formar dependentes de cafeína compentes no seu trabalho escravo de multi nacionais";
             Aluno a2 = new Aluno();
 
