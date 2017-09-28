@@ -11,79 +11,81 @@ namespace EscolaBasica
         static void Main()
         {
             //vou fazer algo bem simples
+            Curso.logo();
+            Aluno estudante1 = new Aluno();
+            estudante1.Nome = "Paulo";
+            estudante1.Idade = 17;
+            estudante1.Classe = "14-A";
+            Professor professor1 = new Professor();
+            professor1.Nome = "Raoni";
+            professor1.Diciplica = "Programacao";
+            professor1.Salario = 8001;
+            professor1.Turma = "14-A";
+            Coordenador coordenador1 = new Coordenador();
+            coordenador1.Nome = "Romulo";
+            coordenador1.Salario = 10001;
+            coordenador1.Telefone = 9123123;
+            Diciplina disciplina1 = new Diciplina();
+            disciplina1.nome = "Programacao";
+            disciplina1.Descricao = "Voce ira passar o restante da sua vida procurando bugs, porem nao ira conseguir resolvar a tempo e virara noites bebendo cafe para corrigir o bug";
+            disciplina1.conceito = "Formar dependentes de cafeína compentes no seu trabalho escravo de multi nacionais";
 
-            Aluno a1 = new Aluno();
-            a1.Nome = "Paulo";
-            a1.Idade = 17;
-            a1.Classe = "14-A";
-            Professor p1 = new Professor();
-            p1.Nome = "Raoni";
-            p1.Diciplica = "Programacao";
-            p1.Salario = 8001;
-            p1.Turma = "14-A";
-            Coordenador c1 = new Coordenador();
-            c1.Nome = "Romulo";
-            c1.Salario = 10001;
-            c1.Telefone = 9123123;
-            Diciplina d1 = new Diciplina();
-            d1.nome = "Programacao";
-            d1.Descricao = "TU VAI PASSARA VIDA TODA DIIGITANDO NA FRENTE DO PC, SEU DEPENDENTE DE CAFE!!!";
-            d1.conceito = "Formar dependentes de cafeína compentes no seu trabalho escravo de multi nacionais";
-            Aluno a2 = new Aluno();
 
-
-            Console.WriteLine("Faculdade Dos Geras - Programa simplificado\n");
+            Aluno estudante2 = new Aluno();
             Console.Write("Digite o nome do aluno:");
-            a2.Nome = Console.ReadLine();
+            estudante2.Nome = Console.ReadLine();
             Console.Write("Digite a Idade do aluno:");
-            a2.Idade = int.Parse(Console.ReadLine());
-            if (a2.Idade < 18) { a2.MenorDeIdade = true; }else { a2.MenorDeIdade = false; }
+            estudante2.Idade = int.Parse(Console.ReadLine());
+            if (estudante2.Idade < 18) { estudante2.MenorDeIdade = true; }else { estudante2.MenorDeIdade = false; }
             Console.Write("Digite a matricula do aluno:");
-            a2.Matricula = int.Parse(Console.ReadLine());
+            estudante2.Matricula = int.Parse(Console.ReadLine());
             Console.Write("Digite o nome do responsavel pelo aluno:");
-            a2.Responsavel = Console.ReadLine();
+            estudante2.Responsavel = Console.ReadLine();
             Console.Write("Digite a classe do aluno:");
-            a2.Classe = Console.ReadLine();
+            estudante2.Classe = Console.ReadLine();
             Console.Write("Digite o CPF do aluno:");
-            a2.Cpf = int.Parse(Console.ReadLine());
+            estudante2.Cpf = int.Parse(Console.ReadLine());
             Console.Write("Digite o Sexo do aluno(a)");
-            a2.Sexo = Console.ReadLine();
+            estudante2.Sexo = Console.ReadLine();
 
             Console.Clear();
+            Curso.logo2();
 
-            Professor p2 = new Professor();
+            Professor professor2 = new Professor();
             Console.Write("Digite o nome do professor a ser contratado:");
-            p2.Nome = Console.ReadLine();
+            professor2.Nome = Console.ReadLine();
             Console.Write("Digite do RG do professor:");
-            p2.Rg = int.Parse(Console.ReadLine());
+            professor2.Rg = int.Parse(Console.ReadLine());
             Console.Write("Digite o Salario do professor:");
-            p2.Salario = int.Parse(Console.ReadLine());
+            professor2.Salario = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite o nome da turma que o professor é responsavel:");
-            p2.Turma = Console.ReadLine();
+            professor2.Turma = Console.ReadLine();
 
             Console.Clear();
-            Coordenador c2 = new Coordenador();
+            Curso.logo3();
+
+            Coordenador coordenador2 = new Coordenador();
             Console.Write("Digite o nome do coordenador:");
-            c2.Nome = Console.ReadLine();
+            coordenador2.Nome = Console.ReadLine();
             Console.Write("Digite do RG do coordenador:");
-            c2.Rg = int.Parse(Console.ReadLine());
+            coordenador2.Rg = int.Parse(Console.ReadLine());
             Console.Write("Digite o Salario do coordenador:");
-            c2.Salario = int.Parse(Console.ReadLine());
+            coordenador2.Salario = int.Parse(Console.ReadLine());
 
             Curso curso1 = new Curso("Ciencia da computacao");
-            
 
             Console.Clear();
+            Curso.logo4();
 
             Console.WriteLine("O aluno que foi criado foi:");
-            Console.WriteLine("Seu nome e:{0}\nSua idade e:{1}\nEle e' menor de idade:{2}\nSua matricula e:{3}\nPertence a sala:{4}", a2.Nome, a2.Idade, a2.MenorDeIdade, a2.Matricula, a2.Classe);
+            Console.WriteLine("Seu nome e:{0}\nSua idade e:{1}\nEle e' menor de idade:{2}\nSua matricula e:{3}\nPertence a sala:{4}", estudante2.Nome, estudante2.Idade, estudante2.MenorDeIdade, estudante2.Matricula, estudante2.Classe);
             Console.WriteLine("O professor criado foi:");
-            Console.WriteLine("Nome:{0}\nRG:{1}\nSalario:{2}", p2.Nome, p2.Rg, p2.Salario);
+            Console.WriteLine("Nome:{0}\nRG:{1}\nSalario:{2}", professor2.Nome, professor2.Rg, professor2.Salario);
             Console.WriteLine("O Coordenador criado foi:");
-            Console.WriteLine("Nome:{0}\nRG:{1}\nSalario:{2}", c2.Nome, c2.Rg, c2.Salario);
+            Console.WriteLine("Nome:{0}\nRG:{1}\nSalario:{2}", coordenador2.Nome, coordenador2.Rg, coordenador2.Salario);
             Console.WriteLine("\nO curso escolhido foi {0}:",curso1.nome);
-            Console.WriteLine("Cuja a descricao e:{0}\nO conceito e:{1}",d1.descricao,d1.conceito);
-            Console.WriteLine("E a cadeira padrao e:{0}", d1.nome);
+            Console.WriteLine("Cuja a descricao e:{0}\nO conceito e:{1}",disciplina1.descricao,disciplina1.conceito);
+            Console.WriteLine("E a cadeira padrao e:{0}", disciplina1.nome);
 
         }
     }

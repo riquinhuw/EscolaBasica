@@ -8,6 +8,8 @@ namespace EscolaBasica
 {
     public class Diciplina
     {
+        //KKk faltou o S do DI - S - CIPLINA
+
         public Aluno aluno = new Aluno();
         public Professor professor = new Professor();
         public string nome;
